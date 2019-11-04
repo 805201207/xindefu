@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<title>联系我们_联系我们_广州信德福智能设备有限公司</title>
+		<link rel="stylesheet" href="css/ziyanshi.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+	</head>
+	<!-- 地图样式 -->
+		<style type="text/css">
+		body, html,#allmap {width: 100%;height: 100%;margin:0;font-size:12px;}
+		#l-map{height:550px;width:100%;}
+		#r-result{width:100%;}
+	</style>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=jzyvCfgBZma9ojrPAfwUjcVmrrYrLYW6"></script>
+	<body>
+		<div class="wrap">
+			<div class="ziyanshi-title">
+				<ul class="left"><img src="img/logo.png" width="100%"></ul>
+				<ul class="right">
+					<li><a href="index.html">信德福首页</a></li>
+					<li><a href="wujingfeijianbaozhuang.php">五金配件包装</a></li>
+					<li><a href="shipingbaozhuang.php">食品药品包装</a></li>
+					<li><a href="feibiaodingzhi.php">非标定制包装</a></li>
+					<li><a href="yangdaizhanshi.php">样袋展示</a></li>
+					<li><a href="guanyvwomen.html">关于我们</a></li>
+					<li><a href="liangxiwomen.html">联系我们</a></li>
+				<ul>
+			</div>
+			<!-- 头部 -->
+			<div class="ziyanshi-two">
+				<ul class="two-img-top"><img src="img/yandaizhanshi.gif" width="100%" height="100%"></ul>
+				<ul class="two-img-buttom">
+					<li style="font-size: 40px;color:#ffffff;">PRODUCT</li>
+					<li style="color:#ffffff;margin-top: 10px;">首页>联系我们</li>
+				</ul>
+			</div>
+			<!-- 隔开距离 -->
+			<div style="width: 100%;height: 100px;"></div>
+			<!-- 中部 -->
+			 <div class="set-content">	
+			    <div class="set-title hd">
+			        <ul class="clearfix">
+			            <li class="on">联系我们</li>
+			            <li>在线留言</li>
+			        </ul>
+			    </div>
+			    <div class="set-middle bd">
+			        <ul class="set-middle-item">
+						<div class="lianxi-women-top">
+							<ul class="lianxi-left">
+								<li style="width: 100%; font-size: 30px;">广州信德福智能包装机械有限公司</li>
+								<li>
+									<ol>电话：15802003858</ol>
+									<ol>杜经理：15802003858</ol>
+								</li>
+								<li>
+									<ol>邮箱：805201207@qq.com</ol>
+									<ol>杜经理：15802003858</ol>
+								</li>
+								<li>
+									<ol>传真：805201207@qq.com</ol>
+									<ol>杜经理：15802003858</ol>
+								</li>
+								<li>
+									<ol>地址：广东省广州市花都区九潭路8号</ol>
+									<ol>杜经理：158002003858</ol>
+								</li>
+							</ul>
+							<ul class="lianxi-right">
+								<li class="top">售后服务专线：15802003858</li>
+								<li class="buttom"><img src="img/erweima.jpg"></li>
+							</ul>
+						</div>
+						<div class="lianxi-women-buttom">
+							<div id="l-map"></div>
+							<div id="r-result"></div>
+						</div>
+			        </ul>
+			        <ul class="set-middle-item">
+						<div class="liuyuan">
+						   <form action="xinxi_post.php" method="post" id="form">
+							<ul class="liu-left">
+								<li>*留言内容
+									<textarea cols="50" rows="8" name="liuyuan" id="liuyuan">
+										
+									</textarea>
+								</li>
+								<li>*姓名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<input type="text"  size="48" id="xinming" name="xinming"
+									 placeholder="请输入姓名/昵称">
+								</li>
+								<li>*性别&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<select value="0" name="sex" id="sex">
+										<option>男&nbsp;&nbsp;</option>
+										<option>女&nbsp;&nbsp;</option>
+									</select>
+								</li>
+								<li>*手机&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<input type="text"  size="48" id="shj" name="shj"
+									 placeholder="请输入您的手机号码">
+								</li>
+								<li>&nbsp;&nbsp;电话&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<input type="text"  size="48" id="dianhua" name="dianhua"
+									placeholder="请输入您电话号码">
+								</li>
+								<li>&nbsp;&nbsp;传真&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<input type="text"  size="48" id="chuanzhen" name="chuanzhen" 
+									placeholder="请输入您传真">
+								</li>
+								<li>&nbsp;&nbsp;地址&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<input type="text"  size="48" id="address" name="address" 
+									placeholder="请输入您的地址">
+								</li>
+								<!-- 验证码 -->
+								<li>
+									<p>验证码
+										<input type = "text" id = "input"style="margin-left: 20px;"
+										 placeholder="请输入验证码"/> 
+										<input type = "button" id="code" size="30px" style="color: #009688; background-color: #666666;" /> 
+									</p>
+								</li>
+								 <li>
+									<input type="submit" value = "提交" id="check" 
+									style="color: #0000FF; margin-left: 40%;"/>
+								</li>
+								<!-- 验证码 -->
+							   </from>
+							</ul>
+							<ul class="liu-right">
+							   <img src="img/U2EpevCnRmCRTJbLLtW6Fw.png" width="100%" height="100%">
+							</ul>
+						</div>
+			        </ul>
+			    </div>
+			</div>
+			<!-- 中部 -->
+			<!-- 尾部 -->
+			<div class="wrap-button">
+				<div  class="buttom-left">
+					<ul class="left-logo"><img src="img/logo.png"></ul>
+					<ul>
+						<li><a href="index.html">信德福首页</a></li>
+						<li><a href="wujingfeijianbaozhuang.php">五金配件包装</a></li>
+						<li><a href="shipingbaozhuang.php">食品药品包装</a></li>
+						<li><a href="feibiaodingzhi.php">非标定制包装</a></li>
+						<li><a href="yangdaizhanshi.php">样袋展示</a></li>
+						<li><a href="guanyvwomen.html">关于我们</a></li>
+						<li><a href="liangxiwomen.html">联系我们</a></li>
+					</ul>
+				</div>
+				<div class="buttom-right">
+					<ul><img src="img/erweima.jpg"></ul>
+					<ul><img src="img/erweima.jpg"></ul>
+				</div>
+			</div>
+			<!-- 尾部 -->
+		</div>
+	</body>
+</html>
+ <script>
+      jQuery(".set-content").slide({autoPlay:false,trigger:"click",delayTime:700,pnLoop:false});
+ </script>
+<!-- 地图 -->
+<script type="text/javascript">
+	// 百度地图API功能
+	var sContent ="广州信德福智能设备有限公司</br>电话：15802003858</br>地址：广东省广州市花都区九潭路8号";
+	var map = new BMap.Map("l-map");
+	var point = new BMap.Point(113.190799, 23.388946);
+	map.centerAndZoom(point, 15);
+	var infoWindow = new BMap.InfoWindow(sContent);  // 创建信息窗口对象
+	map.openInfoWindow(infoWindow,point); //开启信息窗口
+	
+</script>
+<!-- 地图 -->
+<script type="text/javascript">
+window.onload=function(){
+ var code=document.getElementById("code");
+ function change(){
+ // 验证码组成库
+ var arrays=new Array( 
+ '1','2','3','4','5','6','7','8','9','0', 
+ 'a','b','c','d','e','f','g','h','i','j', 
+ 'k','l','m','n','o','p','q','r','s','t', 
+ 'u','v','w','x','y','z', 
+ 'A','B','C','D','E','F','G','H','I','J', 
+ 'K','L','M','N','O','P','Q','R','S','T', 
+ 'U','V','W','X','Y','Z'        
+       ); 
+  // 重新初始化验证码
+  codes ='';
+  // 随机从数组中获取四个元素组成验证码
+  for(var i = 0; i<4; i++){
+   // 随机获取一个数组的下标
+   var r = parseInt(Math.random()*arrays.length);
+   codes += arrays[r];
+  }
+ // 验证码添加到input里
+  code.value = codes;
+ }
+  change();//加载显示在页面上
+  code.onclick = change;//单击更换验证码
+//单击验证
+ var check=document.getElementById("check");
+ var input=document.getElementById("input");
+ check.onclick=function(){
+   var inputCode = input.value.toUpperCase(); //取得输入的验证码并转化为大写   
+  if(inputCode.length==0) { //若输入的验证码长度为0
+   alert("请输入验证码！"); //则弹出请输入验证码
+  } 
+  else if(inputCode!=codes.toUpperCase()) { //若输入的验证码与产生的验证码不一致时
+   alert("验证码输入错误！请重新输入"); //则弹出验证码输入错误
+   change();//刷新验证码
+   input.value="";//清空文本框
+  }    
+  else{ //输入正确时
+   // alert("输入正确"); //弹出输入正确
+  } 
+  }
+}
+</script>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7acfdb5b-6bcf-491e-a7c6-95aa1416fe26" name="localhost" url="http://localhost:8080/lena/xindefu">
+        <fileTransfer port="0" mountedRoot="C:\word" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
