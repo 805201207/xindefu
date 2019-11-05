@@ -358,17 +358,18 @@ a{
    .xinwen .xinwen-content ul .xianqin{
 	   width: 8%;
 	   height: 30px;
+	   
 	   background-color: #0000FF;
-		color:#ffffff;
+	   color:#ffffff;
 	   font-size: 14px;
 	   text-align: center;
 	   border-radius: 2em;
    }
-   .xinwen .xinwen-content ul .xianqin p{
+   .xinwen .xinwen-content ul .xianqin a{
 	   float: left;
 	   margin-top: -25px;
 	   margin-left: 20px;
-   }
+   } 
    .wrap-button{
 	   float: left;
 	   width: 100%;
