@@ -53,31 +53,31 @@
                     </a>
                     <ul class="sub-menu opened">
                         <li>
-                            <a href="http://localhost:8080/lena/xindefu/xindefu-du-h-du/member-fenlei-wujin.php">
+                            <a href="./member-fenlei-wujin.php">
                                 <i class="iconfont">&#xe6a7;</i>
                                 五金包装
                             </a>
                         </li>
                         <li>
-                            <a href="http://localhost:8080/lena/xindefu/xindefu-du-h-du/member-fenlei-spyp.php">
+                            <a href="./member-fenlei-spyp.php">
                                 <i class="iconfont">&#xe6a7;</i>
                                 食品药品包装
                             </a>
                         </li>
                         <li class="current">
-                            <a href="http://localhost:8080/lena/xindefu/xindefu-du-h-du/member-fenlei-feibiao.php">
+                            <a href="./member-fenlei-feibiao.php">
                                 <i class="iconfont">&#xe6a7;</i>
                                 非标定制
                             </a>
                         </li>
                         <li>
-                            <a href="http://localhost:8080/lena/xindefu/xindefu-du-h-du/member-fenlei-yangdai.php">
+                            <a href="./member-fenlei-yangdai.php">
                                 <i class="iconfont">&#xe6a7;</i>
                                 样袋展示
                             </a>
                         </li>
                         <li>
-                            <a href="http://localhost:8080/lena/xindefu/xindefu-du-h-du/member-fenlei-xinwen.php">
+                            <a href="./member-fenlei-xinwen.php">
                                 <i class="iconfont">&#xe6a7;</i>
                                 新闻资讯
                             </a>
@@ -232,7 +232,21 @@
                     </div>
                   </div>
                 </div> 
-            <xblock><a href="feibiao-add.php"><button class="layui-btn" ><i class="layui-icon">&#xe608;</i>添加</button></a><span class="x-right" style="line-height:40px">共有数据：88 条</span></xblock>
+            <xblock><a href="feibiao-add.php"><button class="layui-btn" ><i class="layui-icon">&#xe608;</i>添加</button></a><span class="x-right" style="line-height:40px">
+		<!-- 统计表内的数据条数 -->
+			<?php
+		$conn = @mysql_connect("localhost","root","");
+		if (!$conn){
+		    die("连接数据库失败：" . mysql_error());
+		}
+		
+		mysql_select_db("xingdefu", $conn);
+		$sql = "SELECT COUNT(*) FROM feibiao";
+		$row = mysql_fetch_array( mysql_query($sql) );
+		echo "共有数据: ",$row[0]," 条";
+		?>
+		<!-- 统计表内的数据条数 -->	
+		</span></xblock>
             <!-- 右侧内容框架，更改从这里结束 -->
 			 <!-- 右侧下方内容框架 -->
 			 <div class="wujing" style="width: 100%; height:auto;margin-top: 0px;">
