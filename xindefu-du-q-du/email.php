@@ -36,5 +36,5 @@ function sendMail($to,$title,$content) {
 }
 
 // 调用发送方法，并在页面上输出发送邮件的状态
-var_dump(sendMail('805201207@qq.com','会议主题','今天下午开会'));
+var_dump(sendMail('1523589020@qq.com','杜映全','20171210'));
 
