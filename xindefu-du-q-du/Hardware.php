@@ -11,12 +11,12 @@
 				<ul class="left"><img src="img/logo.png"></ul>
 				<ul class="right">
 					<li><a href="index.html">信德福首页</a></li>
-					<li><a href="wujingfeijianbaozhuang.php">五金配件包装</a></li>
-					<li><a href="shipingbaozhuang.php">食品药品包装</a></li>
-					<li><a href="feibiaodingzhi.php">非标定制包装</a></li>
-					<li><a href="yangdaizhanshi.php">样袋展示</a></li>
-					<li><a href="guanyvwomen.html">关于我们</a></li>
-					<li><a href="liangxiwomen.html">联系我们</a></li>
+					<li><a href="Hardware.php">五金配件包装</a></li>
+					<li><a href="FoodDrugs.php">食品药品包装</a></li>
+					<li><a href="Customized.php">非标定制包装</a></li>
+					<li><a href="Sample.php">样袋展示</a></li>
+					<li><a href="AboutUs.html">关于我们</a></li>
+					<li><a href="ContactUs.html">联系我们</a></li>
 				<ul>
 			</div>
 			<!-- 头部 -->
@@ -74,7 +74,7 @@
 					</div>
 				</div>
 				<div class="zhonbu-right">
-					<?php md5(include './wujin-select.php'); ?>
+					<?php md5(include './HardwareSelect.php'); ?>
 				</div>
 			</div>
 			<!-- 中部 -->
@@ -84,12 +84,12 @@
 					<ul class="left-logo"><img src="img/logo.png"></ul>
 					<ul>
 						<li><a href="index.html">信德福首页</a></li>
-						<li><a href="wujingfeijianbaozhuang.php">五金配件包装</a></li>
-						<li><a href="shipingbaozhuang.php">食品药品包装</a></li>
-						<li><a href="feibiaodingzhi.php">非标定制包装</a></li>
-						<li><a href="yangdaizhanshi.php">样袋展示</a></li>
-						<li><a href="guanyvwomen.html">关于我们</a></li>
-						<li><a href="liangxiwomen.html">联系我们</a></li>
+						<li><a href="Hardware.php">五金配件包装</a></li>
+						<li><a href="FoodDrugs.php">食品药品包装</a></li>
+						<li><a href="Customized.php">非标定制包装</a></li>
+						<li><a href="Sample.php">样袋展示</a></li>
+						<li><a href="AboutUs.html">关于我们</a></li>
+						<li><a href="ContactUs.html">联系我们</a></li>
 					</ul>
 				</div>
 				<div class="buttom-right">
