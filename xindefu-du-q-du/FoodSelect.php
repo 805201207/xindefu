@@ -13,7 +13,7 @@ $pdo = new PDO("mysql:host=$host;dbname=$dbName", $user, $password);
 
 $pdo->query('set names utf8;');
 
-$sql = "select * from wujinbiao";
+$sql = "select * from spyp";
 
 $data = $pdo->query($sql)->fetchAll();
 
@@ -34,7 +34,7 @@ $offset = ($page - 1) * $num;
 
 //var_dump($offset);
 
-$sql = "select * from wujinbiao limit $offset,{$num}";
+$sql = "select * from spyp limit $offset,{$num}";
 
  
 
@@ -87,16 +87,18 @@ $n = ($page == $w) ? 0 : ($page + 1);
             </tr>
 				<td width='40px'>&nbsp</td>
 			   <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-					<?php echo $v['Subtype']; ?>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<?php echo $v['type']; ?>
 				</td>
 			   <td>&nbsp</td>
 			   <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-				   <?php echo $v['Subtype']; ?>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				   <?php echo $v['type']; ?>
 				</td>
 			   <td>&nbsp</td>
 			   <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-					
-					<?php echo $v['Subtype']; ?>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<?php echo $v['type']; ?>
 				</td>
 			<tr>
 				

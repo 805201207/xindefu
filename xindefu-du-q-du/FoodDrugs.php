@@ -61,7 +61,7 @@
 					</div>
 				</div>
 				<div class="zhonbu-right">
-					<?php md5(include './spyp-select.php'); ?>
+					<?php md5(include './FoodSelect.php'); ?>
 				</div>
 			</div>
 			<!-- 中部 -->

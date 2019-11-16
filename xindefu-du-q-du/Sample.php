@@ -73,7 +73,7 @@
 					</div>
 				</div>
 				<div class="zhonbu-right">
-					<?php md5(include './yangdai-select.php'); ?>
+					<?php md5(include './SampleSelect.php'); ?>
 				</div>
 			</div>
 			<!-- 中部 -->
